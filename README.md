@@ -139,3 +139,13 @@ def bool_response_code():
 # It will evaluate to True if the status code was between 200-400 is always a True
 # otherwise False
 ```
+
+### Json basics
+- Java script object notation
+- Use cases: browser data
+- Data is in key value pairs
+- Json encoding from a Dictionary
+- Json decoding into a Dictionary
+- Handling/creating files with python
+- Writing to file
+- Reading from file
