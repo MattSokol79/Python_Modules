@@ -9,8 +9,12 @@ car_data = {"name":"tesla", "engine":"electric"}
 car_data_json_string = json.dumps(car_data) # Changed dict to str
 
 # This is how we can encode from a dictionary and write to a file
-with open("new_json_file.json", "w") as jsonfile: # w is to give write permissions
-    json.dump(car_data, jsonfile)
+try:
+    with open("new_json_file.json", "w") as jsonfile: # w is to give write permissions
+        json.dump(car_data, jsonfile)
+        print("File Created!")
+except FileExistsError:
+    print("Sorry, this file already exists.")
 
 with open("new_json_file.json") as jsonfile:
     car = json.load(jsonfile) # load() copies the data and stores into a variable
@@ -23,10 +27,10 @@ with open("new_json_file.json") as jsonfile:
 # most commonly utilised options
 
 # Exception handling
-try # if
-except # elif or is it
-raise # elif send back the original exception or is it
-finally # else or is it
+# try # if
+# except # elif or is it
+# raise # elif send back the original exception or is it
+# finally # else or is it
 
 # add the exception handling required blocks to check if the file is created
 # if not return back the original exception together with customised
