@@ -21,3 +21,13 @@ with open("new_json_file.json") as jsonfile:
 # Json is used heavily in the industry, so reading(encoding),
 # writing(decoding), parsing data and converting data are the
 # most commonly utilised options
+
+# Exception handling
+try # if
+except # elif or is it
+raise # elif send back the original exception or is it
+finally # else or is it
+
+# add the exception handling required blocks to check if the file is created
+# if not return back the original exception together with customised
+# user friendly message
