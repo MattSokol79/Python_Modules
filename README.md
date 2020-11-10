@@ -163,6 +163,8 @@ def bool_response_code():
 |'b'	 |This opens in binary mode.
 |'+'	 |This will open a file for reading and writing (updating)|
 
+- Syntax `open("file_name", "r, w, x, a, t....")`
+
 **Exception handling**
 - `try` & `except` blocks
 - `raise` & `finally`
